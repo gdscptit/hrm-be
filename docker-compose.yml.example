@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: <your secret>
+      POSTGRES_PASSWORD: <your secret>
+      POSTGRES_DB: <your secret>
+    volumes:
+      - db_data:/var/lib/postgresql/db_data
+    ports:
+      - "5432:5432"
+    networks:
+      - hrm-networks
+  pgadmin:
+    depends_on:
+    - db
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: <your secret>
+      PGADMIN_DEFAULT_PASSWORD: <your secret>
+    ports:
+      - 16543:80
+    networks:
+      - hrm-networks
+volumes:
+  db_data:
+  
+networks:
+  hrm-networks:
+    driver: bridge
