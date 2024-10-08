@@ -1,0 +1,32 @@
+
+<header class="antialiased">
+<nav class="bg-white border-gray-200 shadow-md px-5 py-3">
+  <div class="flex flex-wrap items-center justify-between mx-auto">
+    <div class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="/" class="">
+        <%= render 'layouts/logo' %>
+      </a>
+      <a href="https://github.com/gdscptit/hrm-be" target=_blank class="flex text-blue-500 hover:bg-blue-200 text-sm bg-blue-100 px-2 py-1 items-center rounded-3xl">
+        <svg viewBox="0 0 16 16" width="16" height="16" class="mr-2 text-blue-500" fill="#3b82f6" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+        <b><%= I18n.t('version') %></b>
+      </a>
+    </div>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="flex w-full md:block md:w-auto" id="navbar-default">
+      <ul class="text-sm items-center font-medium flex flex-col px-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+        <li>
+          <a href="<%= sign_in_path %>" class="block py-2.5 text-blue-600 rounded-xl border-gray-300 hover:border-blue-500 px-4" style="border-width: 1px;"><%= I18n.t("views.navbar.sign_in") %></a>
+        </li>
+        <li>
+          <a href="#" class="block py-2.5 text-white rounded-xl bg-blue-600 hover:bg-blue-700 px-4"><%= I18n.t("views.navbar.dont_have_account") %></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>

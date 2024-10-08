@@ -1,0 +1,28 @@
+<% content_for(:title, I18n.t("views.sign_in.title")) %>
+
+<div class="flex items-center justify-between mx-auto bg-white p-10 rounded-2xl w-full max-w-screen-lg">
+  <div class="flex flex-col items-start justify-center" id="small-logo">
+    <%= render 'layouts/small_logo' %>
+
+    <h1 class="text-3xl mt-6"><%= I18n.t('views.sign_in.title') %></h1>
+    <p class="text-gray-600 mt-4 text-lg"><%= I18n.t('views.sign_in.continue_to_hrm') %></p>
+  </div>
+  <div class="max-w-md w-full">
+    <%= form_tag sign_in_path, method: :post, class: 'flex flex-col items-start w-full space-y-2' do %>
+      <label>Email: </label>
+      <%= text_field_tag :email, '', placeholder: 'Email', class: 'px-4 py-2.5 border-blue-600 border-none bg-gray-200 hover:bg-gray-300 rounded-xl focus:ring-0 w-full text-gray-600' %>
+      <label>Mật khẩu: </label>
+      <%= password_field_tag :password, '', placeholder: 'Mật khẩu của bạn', class: 'px-4 py-2.5 border-blue-600 border-none bg-gray-200 hover:bg-gray-300 rounded-xl focus:ring-0 w-full text-gray-600' %>
+      <a href="#" class="text-sm font-semibold text-blue-700"><%= I18n.t("views.sign_in.forgot_your_password") %></a>
+      <br>
+      <div class="text-gray-700">
+        Hãy cẩn thận với <b>mật khẩu của bạn</b>, bảo mật nó thật tốt, vì nó có thể làm <b class="text-red-500">ảnh hưởng đến toàn bộ hệ thống</b>.
+      </div>
+      <br>
+      <div class="flex flex-wrap justify-end w-full mt-4 items-center space-x-2">
+        <a href="#" class="mt-4 px-4 py-3 rounded-xl text-sm font-semibold text-blue-600 hover:bg-blue-50"><%= I18n.t('views.navbar.dont_have_account') %></a>
+        <%= submit_tag I18n.t("views.sign_in.title"), class: "rounded-xl bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-white cursor-pointer mt-4" %>
+      </div>
+    <% end %>
+  </div>
+</div>

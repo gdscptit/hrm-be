@@ -107,12 +107,6 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     debug_inspector (1.2.0)
-    devise (4.9.4)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0)
-      responders
-      warden (~> 1.2.3)
     dotenv (3.1.4)
     drb (2.2.1)
     erubi (1.13.0)
@@ -170,7 +164,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
-    orm_adapter (0.5.0)
+    ostruct (0.6.0)
     parallel (1.26.3)
     paranoia (3.0.0)
       activerecord (>= 6, < 8.1)
@@ -239,9 +233,6 @@ GEM
     regexp_parser (2.9.2)
     reline (0.5.10)
       io-console (~> 0.5)
-    responders (3.1.1)
-      actionpack (>= 5.2)
-      railties (>= 5.2)
     rexml (3.3.8)
     rubocop (1.66.1)
       json (~> 2.3)
@@ -312,8 +303,6 @@ GEM
     unicode-display_width (2.6.0)
     uniform_notifier (1.16.0)
     useragent (0.16.10)
-    warden (1.2.9)
-      rack (>= 2.0.9)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -343,10 +332,10 @@ DEPENDENCIES
   bullet (~> 7.2)
   capybara
   debug
-  devise (~> 4.9)
   dotenv (~> 3.1)
   importmap-rails
   jbuilder
+  ostruct (~> 0.6.0)
   paranoia (~> 3.0)
   pg (~> 1.5.8)
   pry-byebug (~> 3.10)

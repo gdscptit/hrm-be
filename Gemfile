@@ -21,6 +21,9 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
+# Add ostruct for slience the ruby 3.5 warning
+gem "ostruct", "~> 0.6.0"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -70,5 +73,3 @@ gem "pry-byebug", "~> 3.10", groups: [ :test, :development ]
 gem "bullet", "~> 7.2", groups: [ :test, :development ]
 
 gem "tailwindcss-rails", "~> 2.7"
-
-gem "devise", "~> 4.9"

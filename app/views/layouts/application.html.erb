@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Hrm Be" %></title>
+    <title><%= content_for(:title) || "Hrm Be" %> - GDGOC: PTIT</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
@@ -18,7 +18,8 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="antialiased bg-google">
+    <%= render 'layouts/navbar' %>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>

@@ -43,3 +43,7 @@ docker-compose.yml
 
 # ignore node_modules
 /node_modules
+
+# ignore ruby-lsp
+/ruby-lsp
+/.idea

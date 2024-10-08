@@ -1,0 +1,9 @@
+en:
+  views:
+    navbar:
+      sign_in: "Đăng nhập"
+      dont_have_account: "Tôi chưa có tài khoản?"
+    sign_in:
+      title: "Đăng nhập"
+      continue_to_hrm: "Tiếp tục tới GDGOC: HRM"
+      forgot_your_password: "Bạn quên mật khẩu ?"
