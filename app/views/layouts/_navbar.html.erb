@@ -18,6 +18,7 @@
         </svg>
     </button>
     <div class="flex w-full md:block md:w-auto" id="navbar-default">
+      <% unless is_authenticated? %>
       <ul class="text-sm items-center font-medium flex flex-col px-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
         <li>
           <a href="<%= sign_in_path %>" class="block py-2.5 text-blue-600 rounded-xl border-gray-300 hover:border-blue-500 px-4" style="border-width: 1px;"><%= I18n.t("views.navbar.sign_in") %></a>
@@ -26,6 +27,7 @@
           <a href="#" class="block py-2.5 text-white rounded-xl bg-blue-600 hover:bg-blue-700 px-4"><%= I18n.t("views.navbar.dont_have_account") %></a>
         </li>
       </ul>
+      <% end %>
     </div>
   </div>
 </nav>

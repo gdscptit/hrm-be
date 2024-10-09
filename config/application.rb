@@ -23,9 +23,16 @@ module HrmBe
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    # config.time_zone = "Central Time (US & Canada)"
+    config.time_zone = "Asia/Ho_Chi_Minh"
+    config.active_record.default_timezone = :utc
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.encoding = "utf-8"
+
+    config.cache_store = :redis_cache_store, {
+      host: "localhost",
+      port: 6379,
+      db: 0,
+    }, { expires_in: 7.days }
   end
 end

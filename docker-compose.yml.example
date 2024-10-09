@@ -24,6 +24,14 @@ services:
       - 16543:80
     networks:
       - hrm-networks
+  redis_server:
+    image: redis:alpine
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - "1080:1080"
+    environment:
+      - SMTP_PORT=1025
 volumes:
   db_data:
   

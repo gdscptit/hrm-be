@@ -29,3 +29,6 @@
 
 en:
   version: "v0.1.0"
+  mailer:
+    user:
+      title: "[GDGOC - Admin] Xác nhận yêu cầu tạo tài khoản mới"

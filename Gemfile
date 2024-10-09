@@ -19,7 +19,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
-# gem "redis", ">= 4.0.1"
+gem "redis", ">= 4.0.1"
 
 # Add ostruct for slience the ruby 3.5 warning
 gem "ostruct", "~> 0.6.0"
@@ -73,3 +73,11 @@ gem "pry-byebug", "~> 3.10", groups: [ :test, :development ]
 gem "bullet", "~> 7.2", groups: [ :test, :development ]
 
 gem "tailwindcss-rails", "~> 2.7"
+
+gem "rspec-rails", "~> 7.0", groups: [ :test, :development ]
+
+gem "database_cleaner", "~> 2.0", group: :test
+
+gem "rubocop-rspec", "~> 3.1", groups: [ :test, :development ]
+
+gem "redis-rails", "~> 5.0"

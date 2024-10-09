@@ -13,6 +13,8 @@
       <%= text_field_tag :email, '', placeholder: 'Email', class: 'px-4 py-2.5 border-blue-600 border-none bg-gray-200 hover:bg-gray-300 rounded-xl focus:ring-0 w-full text-gray-600' %>
       <label>Mật khẩu: </label>
       <%= password_field_tag :password, '', placeholder: 'Mật khẩu của bạn', class: 'px-4 py-2.5 border-blue-600 border-none bg-gray-200 hover:bg-gray-300 rounded-xl focus:ring-0 w-full text-gray-600' %>
+      <label>Nhập lại mật khẩu: </label>
+      <%= password_field_tag :password_confirmation, '', placeholder: 'Nhập lại mật khẩu của bạn', class: 'px-4 py-2.5 border-blue-600 border-none bg-gray-200 hover:bg-gray-300 rounded-xl focus:ring-0 w-full text-gray-600' %>
       <a href="#" class="text-sm font-semibold text-blue-700"><%= I18n.t("views.sign_in.forgot_your_password") %></a>
       <br>
       <div class="text-gray-700">
