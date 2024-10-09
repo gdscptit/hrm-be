@@ -26,12 +26,12 @@ services:
       - hrm-networks
   redis_server:
     image: redis:alpine
-  mailcatcher:
-    image: schickling/mailcatcher
-    ports:
-      - "1080:1080"
-    environment:
-      - SMTP_PORT=1025
+mailcatcher:
+  image: schickling/mailcatcher
+  ports:
+    - "4080:1080"
+  environment:
+    - SMTP_PORT=1033
 volumes:
   db_data:
   
