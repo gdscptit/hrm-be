@@ -72,7 +72,7 @@ gem "pry-stack_explorer", "~> 0.6.1", groups: [ :test, :development ]
 gem "pry-byebug", "~> 3.10", groups: [ :test, :development ]
 gem "bullet", "~> 7.2", groups: [ :test, :development ]
 
-gem "tailwindcss-rails", "~> 2.7"
+gem "tailwindcss-rails", "~> 3.0"
 
 gem "rspec-rails", "~> 7.0", groups: [ :test, :development ]
 
