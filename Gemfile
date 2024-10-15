@@ -65,7 +65,7 @@ gem "dotenv", "~> 3.1"
 
 gem "paranoia", "~> 3.0"
 
-gem "rubocop", "~> 1.66", groups: [ :test, :development ]
+gem "rubocop", "~> 1.67", groups: [ :test, :development ]
 
 gem "pry-rails", "~> 0.3.11", groups: [ :test, :development ]
 gem "pry-stack_explorer", "~> 0.6.1", groups: [ :test, :development ]
